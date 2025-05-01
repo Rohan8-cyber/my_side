@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shree sant Kejaji Maharaj Convent, Taroda</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      background: #4CAF50;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 22px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h1, .section h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .section p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #555;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .contact-form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact-form input, .contact-form textarea {
+      padding: 10px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 30px;
+    }
+
+    /* Marquee styling */
+    .marquee {
+      background: #4CAF50;
+      color: white;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Marquee -->
+  <marquee class="marquee" behavior="scroll" direction="left" scrollamount="6">
+    Welcome to Shree sant Kejaji Maharaj Convent, Taroda | Empowering Young Minds for a Brighter Tomorrow!
+  </marquee>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Shree sant Kejaji Maharaj Convent, Taroda</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#admission">Admission</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home" class="section">
+    <h1>Welcome to Shree sant Kejaji Maharaj Convent, Taroda</h1>
+    <p>Empowering young minds for a brighter tomorrow.</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>Founded with the vision of providing quality education, Sant Kejaji Maharaj Convent focuses on holistic development, discipline, and academic excellence.</p>
+  </section>
+
+  <section id="admission" class="section">
+    <h2>Admission Information</h2>
+    <p>Admissions are open for Nursery to Grade 10.<br>
+    Visit our school office between 9:00 AM to 2:00 PM.<br>
+    Bring birth certificate, previous school report card, and passport-size photos.</p>
+
+    <!-- Google Form Link -->
+    <h3>Online Admission Application</h3>
+    <p>Please click the button below to fill out the admission form online. All responses will be submitted via Google Forms.</p>
+
+    <a href="https://forms.gle/Mf4iXY9ywmpFAqoG7" target="_blank">
+      <button style="background-color: #4CAF50; color: white; padding: 12px; border-radius: 5px; cursor: pointer;">
+        Fill the Admission Form
+      </button>
+    </a>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="school1.jpg" alt="School Image 1">
+      <img src="school2.jpg" alt="School Image 2">
+      <img src="school6.jpg" alt="School Image 6">
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>📍 Location: Taroda, Maharashtra<br>
+    📞 Phone: +91-9022308521, 7387726583<br>
+    📧 Email: rohanwate41@gmail.com</p>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Sant Kejaji Maharaj Convent, Taroda. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.querySelector('.contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Your message has been sent! Thank you for contacting us.');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
